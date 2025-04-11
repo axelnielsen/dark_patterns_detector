@@ -1,0 +1,94 @@
+{
+  "url": "http://www.lenovo.com/cl",
+  "timestamp": "2025-04-11T09:27:02.695559",
+  "title": "Tienda oficial Lenovo: Notebooks, PCs y Tablets | Lenovo Chile",
+  "summary": {
+    "total_patterns_detected": 2,
+    "pattern_types_detected": [
+      "hidden_costs",
+      "difficult_cancellation"
+    ],
+    "severity_score": 7.7
+  },
+  "screenshots": {
+    "initial": "/Users/axel/Documents/APPS/dark_patterns_detector/data/screenshots/initial_www_lenovo_com.png",
+    "full": "/Users/axel/Documents/APPS/dark_patterns_detector/data/screenshots/full_www_lenovo_com.png"
+  },
+  "patterns": [
+    {
+      "type": "hidden_costs",
+      "count": 1,
+      "detections": [
+        {
+          "pattern_type": "hidden_costs",
+          "evidence_type": "checkout_costs",
+          "evidence": {
+            "section_path": "body",
+            "price_elements": [
+              "free membership for any size business",
+              "free shipping on web orders",
+              "award-winning service and support",
+              "_satellite[\"_runscript10\"](function(event, target, promise) {\nwindow.geofeedback=function(){try{if(v"
+            ],
+            "additional_costs": [
+              "free membership for any size business",
+              "free shipping on web orders",
+              "award-winning service and support",
+              "_satellite[\"_runscript10\"](function(event, target, promise) {\nwindow.geofeedback=function(){try{if(v"
+            ]
+          },
+          "confidence": 0.81,
+          "location": "Sección de checkout en body",
+          "screenshot": "/Users/axel/Documents/APPS/dark_patterns_detector/data/screenshots/full_www_lenovo_com.png",
+          "improvement_suggestion": "Muestre todos los costos desde el principio del proceso. Evite añadir cargos sorpresa en las últimas etapas."
+        }
+      ],
+      "improvement_suggestions": [
+        "Muestre todos los costos desde el principio del proceso. Evite añadir cargos sorpresa en las últimas etapas.",
+        "Muestre todos los costos desde el principio del proceso.",
+        "Evite añadir cargos sorpresa en las últimas etapas.",
+        "Sea transparente sobre todos los costos adicionales como envío, impuestos o comisiones."
+      ]
+    },
+    {
+      "type": "difficult_cancellation",
+      "count": 1,
+      "detections": [
+        {
+          "pattern_type": "difficult_cancellation",
+          "evidence_type": "no_cancellation_links",
+          "evidence": {
+            "sections": [
+              {
+                "path": "body",
+                "text": "tienda oficial de lenovo: compra notebooks, computadoras, tablets y más\n\n\n\n\n    flash_fe_core_tool.$"
+              },
+              {
+                "path": "body > H1[0]",
+                "text": "tienda oficial de lenovo: compra notebooks, computadoras, tablets y más"
+              },
+              {
+                "path": "body > DIV[13] > DIV[19]",
+                "text": "free membership for any size business"
+              },
+              {
+                "path": "body > DIV[13] > DIV[28]",
+                "text": "award-winning service and support"
+              }
+            ]
+          },
+          "confidence": 0.7200000000000001,
+          "location": "Falta de enlaces de cancelación",
+          "screenshot": "/Users/axel/Documents/APPS/dark_patterns_detector/data/screenshots/full_www_lenovo_com.png",
+          "improvement_suggestion": "Haga que el proceso de cancelación sea tan sencillo como el de suscripción. Proporcione un enlace directo a la cancelación."
+        }
+      ],
+      "improvement_suggestions": [
+        "Haga que el proceso de cancelación sea tan sencillo como el de suscripción. Proporcione un enlace directo a la cancelación.",
+        "Haga que el proceso de cancelación sea tan sencillo como el de suscripción.",
+        "Proporcione un enlace directo a la cancelación en áreas visibles.",
+        "Evite procesos de múltiples pasos o llamadas telefónicas obligatorias para cancelar."
+      ]
+    }
+  ]
+}

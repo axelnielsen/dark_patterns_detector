@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Patrones Oscuros - http://www.lenovo.com/cl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .summary {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .severity {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .severity-high {
+            color: #e74c3c;
+        }
+        .severity-medium {
+            color: #f39c12;
+        }
+        .severity-low {
+            color: #27ae60;
+        }
+        .pattern-section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .pattern-header {
+            background-color: #eee;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+            border-radius: 5px 5px 0 0;
+        }
+        .detection {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+        .detection:last-child {
+            border-bottom: none;
+        }
+        .suggestions {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .evidence {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin: 10px 0;
+        }
+        .confidence {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .confidence-high {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .confidence-medium {
+            background-color: #f39c12;
+            color: white;
+        }
+        .confidence-low {
+            background-color: #27ae60;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Informe de Detección de Patrones Oscuros</h1>
+        <p><strong>URL:</strong> <a href="http://www.lenovo.com/cl" target="_blank">http://www.lenovo.com/cl</a></p>
+        <p><strong>Título:</strong> Tienda oficial Lenovo: Notebooks, PCs y Tablets | Lenovo Chile</p>
+        <p><strong>Fecha de análisis:</strong> 11/04/2025 09:27:02</p>
+    </div>
+    
+    <div class="summary">
+        <h2>Resumen</h2>
+        <p>Se detectaron <strong>2</strong> instancias de patrones oscuros.</p>
+        <p>Tipos de patrones detectados: <strong>hidden_costs, difficult_cancellation</strong></p>
+        
+        <p>Puntuación de severidad: 
+            <span class="severity severity-high">7.7/10</span>
+        </p>
+    </div>
+    
+    <h2>Patrones Detectados</h2>
+
+    <div class="pattern-section">
+        <div class="pattern-header">
+            <h3>Cargos ocultos (1 detección)</h3>
+        </div>
+        
+        <div class="detections">
+
+            <div class="detection">
+                <p><strong>Ubicación:</strong> Sección de checkout en body</p>
+                <p><strong>Confianza:</strong> <span class="confidence confidence-high">81%</span></p>
+
+                <p><strong>Evidencia:</strong></p>
+                <div class="evidence">{
+  &quot;section_path&quot;: &quot;body&quot;,
+  &quot;price_elements&quot;: [
+    &quot;free membership for any size business&quot;,
+    &quot;free shipping on web orders&quot;,
+    &quot;award-winning service and support&quot;,
+    &quot;_satellite[\&quot;_runscript10\&quot;](function(event, target, promise) {\nwindow.geofeedback=function(){try{if(v&quot;
+  ],
+  &quot;additional_costs&quot;: [
+    &quot;free membership for any size business&quot;,
+    &quot;free shipping on web orders&quot;,
+    &quot;award-winning service and support&quot;,
+    &quot;_satellite[\&quot;_runscript10\&quot;](function(event, target, promise) {\nwindow.geofeedback=function(){try{if(v&quot;
+  ]
+}</div>
+
+                <p><strong>Captura de pantalla:</strong></p>
+                <img src="/Users/axel/Documents/APPS/dark_patterns_detector/data/screenshots/full_www_lenovo_com.png" alt="Evidencia visual" class="screenshot">
+
+            </div>
+
+        </div>
+        
+        <div class="suggestions">
+            <h4>Sugerencias de mejora:</h4>
+            <ul>
+
+                <li>Muestre todos los costos desde el principio del proceso. Evite añadir cargos sorpresa en las últimas etapas.</li>
+
+                <li>Muestre todos los costos desde el principio del proceso.</li>
+
+                <li>Evite añadir cargos sorpresa en las últimas etapas.</li>
+
+                <li>Sea transparente sobre todos los costos adicionales como envío, impuestos o comisiones.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="pattern-section">
+        <div class="pattern-header">
+            <h3>Suscripciones difíciles de cancelar (1 detección)</h3>
+        </div>
+        
+        <div class="detections">
+
+            <div class="detection">
+                <p><strong>Ubicación:</strong> Falta de enlaces de cancelación</p>
+                <p><strong>Confianza:</strong> <span class="confidence confidence-medium">72%</span></p>
+
+                <p><strong>Evidencia:</strong></p>
+                <div class="evidence">{
+  &quot;sections&quot;: [
+    {
+      &quot;path&quot;: &quot;body&quot;,
+      &quot;text&quot;: &quot;tienda oficial de lenovo: compra notebooks, computadoras, tablets y más\n\n\n\n\n    flash_fe_core_tool.$&quot;
+    },
+    {
+      &quot;path&quot;: &quot;body &gt; H1[0]&quot;,
+      &quot;text&quot;: &quot;tienda oficial de lenovo: compra notebooks, computadoras, tablets y más&quot;
+    },
+    {
+      &quot;path&quot;: &quot;body &gt; DIV[13] &gt; DIV[19]&quot;,
+      &quot;text&quot;: &quot;free membership for any size business&quot;
+    },
+    {
+      &quot;path&quot;: &quot;body &gt; DIV[13] &gt; DIV[28]&quot;,
+      &quot;text&quot;: &quot;award-winning service and support&quot;
+    }
+  ]
+}</div>
+
+                <p><strong>Captura de pantalla:</strong></p>
+                <img src="/Users/axel/Documents/APPS/dark_patterns_detector/data/screenshots/full_www_lenovo_com.png" alt="Evidencia visual" class="screenshot">
+
+            </div>
+
+        </div>
+        
+        <div class="suggestions">
+            <h4>Sugerencias de mejora:</h4>
+            <ul>
+
+                <li>Haga que el proceso de cancelación sea tan sencillo como el de suscripción. Proporcione un enlace directo a la cancelación.</li>
+
+                <li>Haga que el proceso de cancelación sea tan sencillo como el de suscripción.</li>
+
+                <li>Proporcione un enlace directo a la cancelación en áreas visibles.</li>
+
+                <li>Evite procesos de múltiples pasos o llamadas telefónicas obligatorias para cancelar.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Este informe fue generado automáticamente por el Sistema de Detección de Patrones Oscuros.</p>
+    </div>
+</body>
+</html>

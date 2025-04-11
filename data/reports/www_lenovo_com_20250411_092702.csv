@@ -1,0 +1,3 @@
+URL,Título,Fecha,Total Patrones,Puntuación de Severidad,Tipo de Patrón,Número de Detecciones,Ubicación,Confianza,Sugerencia de Mejora
+http://www.lenovo.com/cl,"Tienda oficial Lenovo: Notebooks, PCs y Tablets | Lenovo Chile",2025-04-11T09:27:02.695559,2,7.7,hidden_costs,1,Sección de checkout en body,0.81,Muestre todos los costos desde el principio del proceso. Evite añadir cargos sorpresa en las últimas etapas.
+http://www.lenovo.com/cl,"Tienda oficial Lenovo: Notebooks, PCs y Tablets | Lenovo Chile",2025-04-11T09:27:02.695559,2,7.7,difficult_cancellation,1,Falta de enlaces de cancelación,0.7200000000000001,Haga que el proceso de cancelación sea tan sencillo como el de suscripción. Proporcione un enlace directo a la cancelación.
